@@ -51,12 +51,13 @@ $(document).ready(
 				$.ajax(
 						{
 							url : "server.php",
-							method : "GET",
+							method : "POST",
 							data : {
-								name : $('input[type=text]').val()
+								jsonData:'{"name":"hacker","ID":"123","dept":"CS"}'
 							},
 							success : function(response)
 							{
+								//var data = JSON.parse(response);
 								$('p').html(response);
 							},
 							error : function(error)
