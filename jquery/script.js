@@ -57,8 +57,15 @@ $(document).ready(
 							},
 							success : function(response)
 							{
+<<<<<<< HEAD
+<<<<<<< HEAD
+								$('p').html(json.parse(response));
+=======
+=======
+>>>>>>> a25949f68e0439b9815c84a826df5c57528678ef
 								//var data = JSON.parse(response);
 								$('p').html(response);
+>>>>>>> a25949f68e0439b9815c84a826df5c57528678ef
 							},
 							error : function(error)
 							{
@@ -69,6 +76,12 @@ $(document).ready(
 			}
 
 			);
+
+
+
+
+
+
 	}
 
 
